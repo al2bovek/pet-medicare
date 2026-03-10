@@ -1,0 +1,20 @@
+client/
+  src/
+    api/
+      axios.js
+      auth.js
+    components/
+      ProtectedRoute.jsx
+      AdminRoute.jsx
+    context/
+      AuthContext.jsx
+    pages/
+      Login.jsx
+      Register.jsx
+      UserDashboard.jsx
+      AdminDashboard.jsx
+    App.jsx
+    main.jsx
+  index.html
+  package.json
+

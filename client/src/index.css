@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color: hsla(0, 2%, 8%, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+  background-color: transparent;
+  border: none; 
+}
+

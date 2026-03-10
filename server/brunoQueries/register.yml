@@ -1,0 +1,24 @@
+info:
+  name: register
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/v1/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "user_name": "admin", 
+        "email": "admin@pet.com",
+        "password": "admin001",
+        "role" : "admin"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

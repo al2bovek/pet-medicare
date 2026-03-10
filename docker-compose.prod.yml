@@ -1,0 +1,24 @@
+ server:
+
+  build:
+    context: ./server
+    dockerfile: Dockerfile
+
+  container_name: server_prod
+
+  restart: unless-stopped
+
+  env_file:
+    - .env
+
+  ports:
+    - "3000:5000"
+
+  depends_on:
+    postgres:
+      condition: service_healthy
+
+  networks:
+    - app-network
+
+  command: node server.js

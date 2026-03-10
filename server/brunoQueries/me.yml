@@ -1,0 +1,18 @@
+info:
+  name: me
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:3000/api/v1/auth/me
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBhdGllbnQiLCJpYXQiOjE3NzI4MDk5NzAsImV4cCI6MTc3MjgxMDg3MH0.C_Uzt0-Pc80sz7Xjh_vcjePBL6EiqqH_9zBSvnQN7N4
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
